@@ -1,0 +1,129 @@
+.login{
+  $x:60px;
+  .uk-container{
+    @include media-breakpoint-up('m'){
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  &__w522{
+    @include media-breakpoint-up('m'){
+      max-width: 100%;
+      width: 522px;
+    }
+  }
+  &__btnBackhome{
+    border-radius: 8px;
+    border: 1px solid rgba(20, 55, 95, 0.04);
+    background: #ECF4FD !important;
+    line-height: 58px;
+    width: 60px;
+    padding: 0;
+  }
+  &__forgotLink{
+    color: var(--Blue, #14375F) !important;
+    font-size: 14px;
+    line-height: 1.57;
+    font-family: $font-Helve;
+  }
+  &__txt1{
+    color: rgba(38, 38, 38, 0.80);
+    line-height: 1.5;
+    @include font-size(16px);
+    font-family: $font-Helve;
+    a{
+      color: var(--Blue, #273E8A);
+      font-family: $font-HelveBold;
+    }
+  }
+  &__title{
+    @extend .blockForm__card__title;
+    line-height: 1.1 !important;
+    text-align: left !important;
+  }
+  &__desc{
+    color: #000;
+    line-height: 1.75;
+    @include font-size(16px);
+    font-family: $font-Helve;
+  }
+  &__input{
+    height: #{$x};
+    border-radius: 8px;
+    background: #F1F7FD;
+    font-family: $font-Helve_Italic;
+    padding: 0 20px;
+    &::placeholder{
+      color: rgba(0, 0, 0, 0.50);
+    }
+  }
+  &__btnSubmit{
+    line-height: calc(#{$x} - 2px);
+    border-radius: 8px;
+    background: var(--Blue, #14375F) !important;
+    @include font-size(16px);
+    font-family: $font-HelveBold;
+    text-transform: inherit;
+  }
+  &__btnSocial{
+    line-height: calc(#{$x} - 2px);
+    border-radius: 8px;
+    background: #F1F7FD !important;
+    color: rgba(38, 38, 38, 0.80) !important;
+    text-transform: inherit;
+    @include font-size(16px);
+    font-family: $font-Helve;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    &:before{
+      content: "";
+      display: flex;
+      background-size: 100%;
+      background: var(--social-url);
+    }
+    &--google{
+      &:before{
+        width: 28px;
+        height: 28px;
+      }
+    }
+    &--fb{
+      &:before{
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  &__line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(0, 0, 0, 0.40);
+    line-height: 1.5;
+    @include font-size(16px);
+    font-family: $font-Helve;
+    &:before,&:after{
+      content: "";
+      width: 1px;
+      height: 40px;
+      display: flex;
+      border-left: 1px dashed rgba(0, 0, 0, 0.40);
+    }
+    &:before{
+
+    }
+    &:after{
+
+    }
+  }
+}

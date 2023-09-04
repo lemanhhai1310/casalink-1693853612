@@ -1,0 +1,91 @@
+.footer{
+  background-color: var(--Blue, #273E8A);
+  &__bottom{
+    border-top: 1px solid rgba(217, 217, 217, 0.12);
+    &__txt{
+      font-size: 14px;
+      line-height: 1;
+      font-family: $font-Inter;
+      font-weight: 400;
+    }
+  }
+  &__w413{
+    max-width: 413px;
+    width: 100%;
+    @include media-breakpoint-up('m'){
+      min-width: 413px;
+    }
+  }
+  &__top{
+    @include media-breakpoint-up('m'){
+      //padding-top: 100px;
+    }
+    &__title{
+      @include font-size(20px);
+      line-height: 1.4;
+      font-family: $font-HelveBold;
+      &--c1{
+        @include font-size(16px);
+        line-height: 1.75;
+        font-family: $font-Helve_Italic;
+        margin-bottom: 12px;
+      }
+    }
+    &__address{
+      @include font-size(16px);
+      font-family: $font-Helve;
+      //color: rgba(255, 255, 255, 0.90);
+      &__name{
+        color: #fff;
+        font-family: $font-HelveBold;
+      }
+    }
+    &__navLink{
+      >li{
+        >a{
+          @include font-size(16px);
+          font-family: $font-Helve;
+        }
+      }
+    }
+    &__social{
+      a{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        background: #fff;
+      }
+    }
+  }
+  &__form{
+    $x:48px;
+    &__input{
+      padding-right: calc(12px + var(--width-form)) !important;
+      border-radius: 8px;
+      background-color: #FFF !important;
+      font-size: 14px;
+      color: #666 !important;
+      font-family: $font-Helve_Italic;
+      height: #{$x} !important;
+      &::placeholder{
+        color: #AAA !important;
+      }
+      &:focus{
+        border-color: #E92629 !important;
+      }
+    }
+    &__btn{
+      width: var(--width-form);
+      padding: 0;
+      border-radius: 8px;
+      background: var(--Red, #E92629);
+      text-transform: inherit;
+      font-size: 16px;
+      font-family: $font-HelveBold;
+      line-height: calc(#{$x} - 2px);
+    }
+  }
+}

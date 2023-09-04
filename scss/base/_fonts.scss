@@ -1,0 +1,45 @@
+/**
+ * --------------------------------------------------------------------
+ * UTM Helve
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'UTM Helve Regular';
+  font-display: swap;
+  src:local('UTM Helve Regular'),
+  url('fonts/utm_helve/UTM-Helve.ttf') format('woff'),
+  url('fonts/utm_helve/UTM-Helve.ttf') format('opentype'),
+  url('fonts/utm_helve/UTM-Helve.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'UTM Helve Regular Italic';
+  font-display: swap;
+  src:local('UTM Helve Regular Italic'),
+  url('fonts/utm_helve/UTM-Helve_Italic.ttf') format('woff'),
+  url('fonts/utm_helve/UTM-Helve_Italic.ttf') format('opentype'),
+  url('fonts/utm_helve/UTM-Helve_Italic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'UTM Helve Bold';
+  font-display: swap;
+  src:local('UTM Helve Bold'),
+  url('fonts/utm_helve/UTM-HelveBold.ttf') format('woff'),
+  url('fonts/utm_helve/UTM-HelveBold.ttf') format('opentype'),
+  url('fonts/utm_helve/UTM-HelveBold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'UTM Helve Bold Italic';
+  font-display: swap;
+  src:local('UTM Helve Bold Italic'),
+  url('fonts/utm_helve/UTM-HelveBold_Italic.ttf') format('woff'),
+  url('fonts/utm_helve/UTM-HelveBold_Italic.ttf') format('opentype'),
+  url('fonts/utm_helve/UTM-HelveBold_Italic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}

@@ -1,0 +1,129 @@
+.blockForm{
+  background: linear-gradient(180deg, rgba(25, 155, 211, 0.00) 0%, rgba(25, 155, 211, 0.60) 258.54%);
+  position: relative;
+  z-index: 10;
+  &:before,&:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:before{
+
+  }
+  &:after{
+    background: var(--bg-after);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    @include media-breakpoint-up('m'){
+      bottom: -27px;
+    }
+  }
+  &__sectionContent{
+    padding-bottom: 70px;
+    @include media-breakpoint-up('m'){
+      padding-bottom: 59px;
+    }
+  }
+  &__heading{
+    &__txt{
+      color: var(--Red, #E92629);
+      @include font-size(16px);
+      line-height: 1;
+      font-family: $font-HelveBold;
+      font-style: italic;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      flex-direction: row;
+      column-gap: 14px;
+      &:before,&:after{
+        content: "";
+        width: 43px;
+        height: 7px;
+        display: inline-flex;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:before{
+        background-image: var(--line-left);
+      }
+      &:after{
+        background-image: var(--line-right);
+      }
+    }
+    &__title{
+      @extend .blockForm__card__title;
+      line-height: 1 !important;
+    }
+  }
+  &__card{
+    $x:48px;
+    border-radius: 12px;
+    background: #F2FBFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    @include media-breakpoint-up('m'){
+      //min-height: 504px;
+      max-width: 522px;
+      margin-top: 115px;
+    }
+    &__title{
+      text-transform: uppercase;
+      line-height: 1.375;
+      @include font-size(32px);
+      font-family: $font-HelveBold;
+      color: var(--Blue, #273E8A);
+      text-align: center;
+    }
+    &__desc{
+      color: #262626;
+      @include font-size(16px);
+      line-height: 1.75;
+      font-family: $font-Helve;
+    }
+    &__btnSelect{
+      line-height: calc(#{$x} - 2px);
+      box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.04) inset;
+      border-radius: 4px;
+      border: 1px solid rgba(25, 155, 211, 0.20);
+      background: #FFF;
+      text-align: left;
+      padding: 0 20px;
+      text-transform: inherit;
+      color: rgba(0, 0, 0, 0.40);
+      @include font-size(16px);
+      font-family: $font-Helve_Italic;
+    }
+    &__btnSubmit{
+      line-height: calc(#{$x} - 2px);
+      text-transform: inherit;
+      border-radius: 4px;
+      background: var(--Blue-P, #199BD3);
+      @include font-size(16px);
+      font-family: $font-HelveBold;
+    }
+    &__input{
+      height: #{$x};
+      border-radius: 4px;
+      border: 1px solid rgba(25, 155, 211, 0.20);
+      background: #FFF;
+      box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.04) inset;
+      padding: 0 20px;
+      @include font-size(16px);
+      font-family: $font-Helve_Italic;
+      &::placeholder{
+        color: rgba(0, 0, 0, 0.40);
+      }
+    }
+  }
+}
