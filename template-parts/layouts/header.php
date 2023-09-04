@@ -48,7 +48,7 @@
                 --header-top-left: url(images/Group-272.png);
                 --header-top-right: url(images/Group-271.png);
             "
-            class="header__top uk-navbar-container">
+            class="header__top uk-navbar-container uk-visible@m">
             <div class="uk-container">
                 <div uk-navbar>
 

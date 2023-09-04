@@ -1,0 +1,53 @@
+.giangvien{
+  &__cover{
+    border-radius: 12px;
+  }
+  &__title{
+    @include font-size(32px);
+    font-family: $font-HelveBold;
+    color: #FFF;
+    line-height: 1.12;
+    min-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__desc{
+    @include font-size(16px);
+    line-height: 1.75;
+    color: #262626;
+    text-align: center;
+    font-family: $font-Helve;
+    strong{
+      font-family: $font-HelveBold;
+      color: var(--Red, #E92629);
+    }
+    span{
+      font-family: $font-HelveBold;
+      color: var(--Blue, #273E8A);
+    }
+  }
+  &__box{
+    padding: 0 20px;
+    padding-left: 88px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+    >*{
+      &:nth-child(1){
+        color: #262626;
+        font-family: $font-HelveBold;
+        line-height: (28/20);
+        @include font-size(20px);
+      }
+      &:nth-child(2){
+        color: #FFF;
+        @include font-size(14px);
+        font-family: $font-HelveBold;
+        line-height: (20/14);
+      }
+    }
+  }
+}

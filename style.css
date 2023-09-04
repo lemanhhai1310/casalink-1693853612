@@ -1341,5 +1341,59 @@
   display: flex;
   border-left: 1px dashed rgba(0, 0, 0, 0.4);
 }
+.giangvien__cover {
+  border-radius: 12px;
+}
+.giangvien__title {
+  font-size: calc(1.325rem + 0.9vw);
+  font-family: "UTM Helve Bold", sans-serif;
+  color: #FFF;
+  line-height: 1.12;
+  min-height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .giangvien__title {
+    font-size: 2rem;
+  }
+}
+.giangvien__desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #262626;
+  text-align: center;
+  font-family: "UTM Helve Regular", sans-serif;
+}
+.giangvien__desc strong {
+  font-family: "UTM Helve Bold", sans-serif;
+  color: var(--Red, #E92629);
+}
+.giangvien__desc span {
+  font-family: "UTM Helve Bold", sans-serif;
+  color: var(--Blue, #273E8A);
+}
+.giangvien__box {
+  padding: 0 20px;
+  padding-left: 88px;
+  padding-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 8px;
+}
+.giangvien__box > *:nth-child(1) {
+  color: #262626;
+  font-family: "UTM Helve Bold", sans-serif;
+  line-height: 1.4;
+  font-size: 1.25rem;
+}
+.giangvien__box > *:nth-child(2) {
+  color: #FFF;
+  font-size: 0.875rem;
+  font-family: "UTM Helve Bold", sans-serif;
+  line-height: 1.4285714286;
+}
 
 /*# sourceMappingURL=style.css.map */
