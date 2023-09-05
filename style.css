@@ -43,6 +43,9 @@
 .uk-container {
   max-width: 1280px;
 }
+.uk-container-small {
+  max-width: 846px;
+}
 
 @media (min-width: 1600px) {
   .uk-grid-5-xl {
@@ -912,6 +915,10 @@
   row-gap: 20px;
 }
 
+.row-gap-24 {
+  row-gap: 24px;
+}
+
 .row-gap-30 {
   row-gap: 30px;
 }
@@ -937,6 +944,10 @@
   column-gap: 20px;
 }
 
+.header {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  z-index: 9999;
+}
 .header__top {
   position: relative;
 }
@@ -1172,7 +1183,7 @@
     margin-top: 115px;
   }
 }
-.blockForm__card__title, .flash_card__cauhoi__title, .login__title, .blockForm__heading__title {
+.blockForm__card__title, .baiviet__title, .baiviet__article .uk-article-title, .flash_card__cauhoi__title, .login__title, .blockForm__heading__title {
   text-transform: uppercase;
   line-height: 1.375;
   font-size: calc(1.325rem + 0.9vw);
@@ -1181,7 +1192,7 @@
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .blockForm__card__title, .flash_card__cauhoi__title, .login__title, .blockForm__heading__title {
+  .blockForm__card__title, .baiviet__title, .baiviet__article .uk-article-title, .flash_card__cauhoi__title, .login__title, .blockForm__heading__title {
     font-size: 2rem;
   }
 }
@@ -1469,6 +1480,177 @@
   left: 0;
   background: #2854AB;
   display: flex;
+}
+
+@media (min-width: 960px) {
+  .baiviet__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.baiviet__box {
+  color: var(--Red, #E92629);
+  font-size: 14px;
+  font-family: "UTM Helve Bold", sans-serif;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.baiviet__box > * {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.baiviet__box > *:nth-child(n+2):before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #E92629;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: inherit;
+  position: relative;
+  top: 3px;
+}
+.baiviet__article .uk-article-title {
+  line-height: 1.4375 !important;
+  text-transform: inherit;
+}
+.baiviet__article .uk-article-meta {
+  color: #002A40;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-family: "UTM Helve Regular", sans-serif;
+}
+.baiviet__social {
+  top: 20px;
+  right: 0;
+  left: 100%;
+  padding-left: 0;
+  width: max-content;
+  position: absolute !important;
+  max-width: calc(100% - var(--uk-position-margin-offset) * 2);
+  box-sizing: border-box;
+}
+.baiviet__social__icon {
+  border-radius: 28px;
+  background: #FFF;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.16);
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baiviet__slider-container-offset {
+  margin-left: calc(0px - 14px);
+  margin-right: calc(0px - 14px);
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.baiviet__icon {
+  width: 40px;
+  height: 40px;
+  background: #E2E2E2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+}
+.baiviet__icon:hover {
+  background: #E92629;
+}
+.baiviet__card {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 12px;
+}
+.baiviet__card:hover {
+  background: #EEF2FF;
+  box-shadow: 0px 3px 12px rgba(39, 39, 45, 0.16);
+}
+.baiviet__card__coverImg {
+  border-radius: 8px;
+}
+.baiviet__card__title {
+  color: #363636;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  font-family: "UTM Helve Bold", sans-serif;
+}
+.baiviet__card__title a {
+  color: #363636;
+}
+.baiviet__card:hover .baiviet__card__title a {
+  color: var(--Blue, #273E8A);
+}
+.baiviet__card__time {
+  color: var(--Blue, #273E8A);
+  font-size: 1rem;
+  font-family: "UTM Helve Regular", sans-serif;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.baiviet__card__time:before {
+  content: "";
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background: var(--icon-datetime);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.baiviet__card__linkMore {
+  color: rgba(233, 38, 41, 0.6);
+  text-transform: inherit;
+  font-size: 1rem;
+  font-family: "UTM Helve Regular Italic", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.baiviet__card__linkMore:after {
+  content: "";
+  display: flex;
+  background: var(--icon-more);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.baiviet__card:hover .baiviet__card__linkMore {
+  color: var(--Red, #E92629);
+  font-family: "UTM Helve Bold", sans-serif;
+  font-style: italic;
+}
+.baiviet__title {
+  line-height: 1.12;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.baiviet__title:after {
+  content: "";
+  width: 143px;
+  height: 15px;
+  display: flex;
+  background: var(--icon-title-bottom);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

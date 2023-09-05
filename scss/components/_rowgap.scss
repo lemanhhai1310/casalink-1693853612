@@ -6,7 +6,7 @@
 @mixin row-gap($i){
   row-gap: #{$i}px;
 }
-$x:12,16,20,30;
+$x:12,16,20,24,30;
 @each $i in $x{
   .row-gap-#{$i}{
     @include row-gap($i);
