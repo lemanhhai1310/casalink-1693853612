@@ -945,8 +945,10 @@
 }
 
 .header {
-  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
   z-index: 9999;
+}
+.header.uk-active {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
 }
 .header__top {
   position: relative;
