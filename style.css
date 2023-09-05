@@ -1172,7 +1172,7 @@
     margin-top: 115px;
   }
 }
-.blockForm__card__title, .login__title, .blockForm__heading__title {
+.blockForm__card__title, .flash_card__cauhoi__title, .login__title, .blockForm__heading__title {
   text-transform: uppercase;
   line-height: 1.375;
   font-size: calc(1.325rem + 0.9vw);
@@ -1181,7 +1181,7 @@
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .blockForm__card__title, .login__title, .blockForm__heading__title {
+  .blockForm__card__title, .flash_card__cauhoi__title, .login__title, .blockForm__heading__title {
     font-size: 2rem;
   }
 }
@@ -1394,6 +1394,81 @@
   font-size: 0.875rem;
   font-family: "UTM Helve Bold", sans-serif;
   line-height: 1.4285714286;
+}
+
+.flash_card__cauhoi {
+  background: #F9F0DA;
+}
+.flash_card__cauhoi__title {
+  line-height: 1.375 !important;
+}
+.flash_card__cauhoi__desc {
+  color: #172C48;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: "UTM Helve Regular", sans-serif;
+  margin-bottom: 0;
+}
+.flash_card__cauhoi__accordion {
+  background: rgba(244, 248, 255, 0.8);
+  padding-left: 20px;
+}
+@media (min-width: 960px) {
+  .flash_card__cauhoi__accordion {
+    padding-left: 40px;
+  }
+}
+.flash_card__cauhoi__accordion__li {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.flash_card__cauhoi__accordion__li:nth-child(n+2) {
+  margin-top: 0;
+  border-top: 2px solid #fff;
+}
+.flash_card__cauhoi__accordion__title {
+  color: var(--text, #122E52);
+  line-height: 1.2;
+  font-size: 1.25rem;
+  font-family: "UTM Helve Regular", sans-serif;
+}
+.uk-open > .flash_card__cauhoi__accordion__title {
+  color: var(--color-2, #2854AB);
+}
+.flash_card__cauhoi__accordion__title:before {
+  margin-right: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpolyline fill='none' stroke='%232854AB' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
+}
+.uk-open > .flash_card__cauhoi__accordion__title:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpolyline fill='none' stroke='%232854AB' stroke-width='1.03' points='4 13 10 7 16 13'%3E%3C/polyline%3E%3C/svg%3E");
+}
+.flash_card__cauhoi__accordion__content {
+  margin-top: 24px;
+}
+@media (min-width: 960px) {
+  .flash_card__cauhoi__accordion__content {
+    padding-left: 48px;
+  }
+}
+.flash_card__cauhoi__accordion__content > * {
+  color: #484848;
+  font-size: 1.125rem;
+  font-family: "UTM Helve Regular", sans-serif;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+.flash_card__cauhoi__accordion__content > *:before {
+  content: "";
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  background: #2854AB;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
