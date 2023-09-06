@@ -27,6 +27,10 @@
 
 </div>
 
+<!--Danh sách khoá học-->
+<?php require "template-parts/layouts/block_dskhoahoc.php"; ?>
+<!--/Danh sách khoá học-->
+
 <!--Hệ sinh thái sản phẩm tại Casalink-->
 <?php require "template-parts/layouts/block_hesinhthai.php"; ?>
 <!--/Hệ sinh thái sản phẩm tại Casalink-->
@@ -58,7 +62,7 @@
 <div class="uk-section">
     <div class="uk-container">
         <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Tin tức và sự kiện</h2>
-        <div class="uk-margin-medium-top" uk-slider="finite: true; sets: true">
+        <div class="uk-margin-medium-top" uk-slider="finite: false; sets: false">
 
             <div class="uk-position-relative">
 

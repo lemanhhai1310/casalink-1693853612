@@ -4,6 +4,10 @@
 <?php $isLogin = false ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<!--Danh sách khoá học-->
+<?php require "template-parts/layouts/block_dskhoahoc.php"; ?>
+<!--/Danh sách khoá học-->
+
 <!--ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
 <?php require "template-parts/layouts/block_dangkyhocthu.php"; ?>
 <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
