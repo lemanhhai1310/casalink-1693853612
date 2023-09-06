@@ -1,0 +1,52 @@
+.dangkyhocthu{
+  @include media-breakpoint-up('m'){
+    min-height: 280px;
+  }
+  background-color: #D9D9D9;
+  &__box{
+    >*{
+      @include font-size(32px);
+      font-family: $font-HelveBold;
+      line-height: 1.125;
+      font-style: italic;
+      color: rgba(61, 64, 74, 0.12);
+      &:first-child{
+        color: #E8EA89;
+      }
+    }
+  }
+  &__btn{
+    background: #199BD3;
+    @include font-size(24px);
+    font-family: $font-HelveBold;
+    position: relative;
+    span{
+      color: #fff;
+      z-index: 11;
+    }
+    &:before,&:after{
+      content: "";
+      position: absolute;
+      border-radius: 500px;
+    }
+    &:before{
+      $x:6px;
+      content: "";
+      top: calc(0px - #{$x});
+      right: calc(0px - #{$x});
+      left: calc(0px - #{$x});
+      bottom: calc(0px - #{$x});
+      background: rgba(103, 184, 219, 0.40);
+    }
+    &:after{
+      $x:10px;
+      content: "";
+      top: calc(0px - #{$x});
+      right: calc(0px - #{$x});
+      left: calc(0px - #{$x});
+      bottom: calc(0px - #{$x});
+      background: rgba(87, 204, 255, 0.32);
+      filter: blur(4px);
+    }
+  }
+}
