@@ -1,0 +1,23 @@
+.home{
+  &__hinhanh{
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: 200px;
+      background-color: #ECF3F6;
+    }
+    position: relative;
+    background-image: var(--bg-hinhanh);
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    &__box{
+
+    }
+    &__grid1{
+      padding: 6px;
+    }
+  }
+}
