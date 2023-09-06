@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bc9971fd-a554-4db5-a0a1-4d26f11d5c67" name="casalink" url="http://116.118.50.53">
+        <fileTransfer rootFolder="/themes.cathtmlcss.net/2023/09/casalink" host="116.118.50.53" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
