@@ -7,6 +7,10 @@
 <?php require "template-parts/layouts/block_dangkyhocthu.php"; ?>
 <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
 
+<!--Tại sao? ba mẹ nên chọn Casalink-->
+<?php require "template-parts/layouts/block_taisao.php"; ?>
+<!--/Tại sao? ba mẹ nên chọn Casalink-->
+
 <!--ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
 <?php require "template-parts/layouts/block_dangkyhocthu.php"; ?>
 <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->

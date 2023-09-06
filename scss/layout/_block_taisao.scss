@@ -1,0 +1,27 @@
+.taisao{
+  &__bg{
+    //min-height: 1126px;
+    background: url(images/Group_198.png) no-repeat bottom center;
+  }
+  &__title{
+    &:before{
+      content: var(--txt-taisao-before);
+      color: #fff;
+      background: url(images/Group_19.png);
+      width: 268px;
+      height: 53px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    text-transform: uppercase;
+    line-height: 1.125;
+    @include font-size(32px);
+    font-family: $font-HelveBold;
+    color: var(--Blue, #273E8A);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

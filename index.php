@@ -35,6 +35,10 @@
 <?php require "template-parts/layouts/block_dangkyhocthu.php"; ?>
 <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
 
+<!--Tại sao? ba mẹ nên chọn Casalink-->
+<?php require "template-parts/layouts/block_taisao.php"; ?>
+<!--/Tại sao? ba mẹ nên chọn Casalink-->
+
 <!--block1-->
 <?php require "template-parts/layouts/block1.php"; ?>
 <!--/block1-->

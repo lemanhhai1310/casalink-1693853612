@@ -46,6 +46,9 @@
 .uk-container-small {
   max-width: 846px;
 }
+.uk-lightbox {
+  background: rgba(0, 0, 0, 0.8);
+}
 
 @media (min-width: 1600px) {
   .uk-grid-5-xl {
@@ -1587,6 +1590,49 @@
   margin-top: 90px;
   left: calc(0px - 70px);
   right: calc(0px - 70px);
+}
+
+.taisao__bg {
+  background: url(images/Group_198.png) no-repeat bottom center;
+}
+.taisao__title {
+  text-transform: uppercase;
+  line-height: 1.125;
+  font-size: calc(1.325rem + 0.9vw);
+  font-family: "UTM Helve Bold", sans-serif;
+  color: var(--Blue, #273E8A);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.taisao__title:before {
+  content: var(--txt-taisao-before);
+  color: #fff;
+  background: url(images/Group_19.png);
+  width: 268px;
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 1200px) {
+  .taisao__title {
+    font-size: 2rem;
+  }
 }
 
 .home__hinhanh {
