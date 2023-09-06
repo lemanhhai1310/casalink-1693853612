@@ -52,4 +52,11 @@
     </div>
 </div>
 <!--/Câu hỏi thường gặp-->
+
+<div class="uk-section">
+    <div class="uk-container">
+        <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Phản hồi từ chính học viên</h2>
+        <?php require "template-parts/layouts/galery.php"; ?>
+    </div>
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>
