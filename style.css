@@ -1580,6 +1580,15 @@
           filter: blur(4px);
 }
 
+.hesinhthai__bg {
+  background: url(images/Ellipse_100.png) no-repeat top -150px center, url(images/Mask_group.png) no-repeat bottom -70px center, linear-gradient(181deg, rgba(25, 155, 211, 0) -0.83%, rgba(25, 155, 211, 0.2) 94.63%);
+}
+.hesinhthai__box {
+  margin-top: 90px;
+  left: calc(0px - 70px);
+  right: calc(0px - 70px);
+}
+
 .home__hinhanh {
   position: relative;
   background-image: var(--bg-hinhanh);

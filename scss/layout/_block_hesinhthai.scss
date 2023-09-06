@@ -1,0 +1,15 @@
+.hesinhthai{
+  &__bg{
+    //min-height: 900px;
+    background:
+      url(images/Ellipse_100.png) no-repeat top -150px center,
+      url(images/Mask_group.png) no-repeat bottom -70px center,
+      linear-gradient(181deg, rgba(25, 155, 211, 0.00) -0.83%, rgba(25, 155, 211, 0.20) 94.63%);
+  }
+  &__box{
+    margin-top: 90px;
+    $x:70px;
+    left: calc(0px - #{$x});
+    right: calc(0px - #{$x});
+  }
+}

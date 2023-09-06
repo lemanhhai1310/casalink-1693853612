@@ -66,4 +66,8 @@
     </div>
 </div>
 <!--PHẢN HỒI TỪ CHÍNH HỌC VIÊN-->
+
+<!--Hệ sinh thái sản phẩm tại Casalink-->
+<?php require "template-parts/layouts/block_hesinhthai.php"; ?>
+<!--/Hệ sinh thái sản phẩm tại Casalink-->
 <?php require "template-parts/layouts/footer.php"; ?>

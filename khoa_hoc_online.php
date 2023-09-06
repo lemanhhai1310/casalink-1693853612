@@ -11,4 +11,8 @@
 <?php require "template-parts/layouts/block1.php"; ?>
 <!--/block1-->
 
+<!--Hệ sinh thái sản phẩm tại Casalink-->
+<?php require "template-parts/layouts/block_hesinhthai.php"; ?>
+<!--/Hệ sinh thái sản phẩm tại Casalink-->
+
 <?php require "template-parts/layouts/footer.php"; ?>
