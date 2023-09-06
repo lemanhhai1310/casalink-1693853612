@@ -1,4 +1,4 @@
-<div class="uk-section">
+<div class="uk-section"  uk-toggle="cls: <?= (isset($isHome)) ? 'khoahoc__bg' : '' ?>; mode: media; media: @m">
     <div class="uk-container">
         <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Danh sách khoá học</h2>
         <div class="uk-margin-medium-top" uk-slider="finite: false; sets: false">
