@@ -1365,6 +1365,159 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
+.block1__bg {
+  position: relative;
+}
+@media (min-width: 960px) {
+  .block1__bg {
+    padding-top: 80px;
+  }
+}
+.block1__bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(images/Group_131.png);
+  background-repeat: no-repeat;
+  display: none;
+  width: 263px;
+  height: 263px;
+  z-index: 998;
+}
+@media (min-width: 960px) {
+  .block1__bg:before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.block1__bg--home {
+  background: url(images/Rectangle_140585-2.png) repeat-x top center, url(images/Group_131.png) no-repeat top left;
+}
+.block1__bg--nothome {
+  background: url(images/Rectangle_140585.png) repeat-x top center, url(images/Group_131.png) no-repeat top left;
+}
+.block1__phanhoi__avatar {
+  position: relative;
+  border: 8px solid #FFF;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(183, 18, 18, 0.12);
+          box-shadow: 0px 2px 4px 0px rgba(183, 18, 18, 0.12);
+  z-index: 10;
+}
+.block1__phanhoi__card {
+  margin-top: -60px;
+  border-radius: 20px;
+  border: 2px solid #E92629;
+  background-color: #FFFEFA;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: relative;
+  padding-top: 70px;
+}
+.block1__phanhoi__card:before {
+  left: 36px;
+  top: -36px;
+  background: url("images/quotation_2.png");
+}
+.block1__phanhoi__card:after {
+  bottom: -36px;
+  right: 33px;
+  background: url("images/quotation_1.png");
+}
+.block1__phanhoi__card:before, .block1__phanhoi__card:after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 11;
+}
+@media (min-width: 960px) {
+  .block1__phanhoi__card {
+    padding: 84px 60px 80px;
+  }
+}
+.block1__phanhoi__card__txt {
+  color: var(--Red, #E92629);
+  font-size: 1rem;
+  line-height: 1.75;
+  font-family: "UTM Helve Regular Italic", sans-serif;
+}
+.block1__phanhoi__card__desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-family: "UTM Helve Bold", sans-serif;
+  color: #262626;
+}
+.block1__card__title {
+  color: var(--Blue, #273E8A);
+  font-family: "UTM Helve Bold", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.block1__card__desc, .block1__card__list > li {
+  color: #000;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "UTM Helve Regular", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.block1__card__list {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.block1__card__list > li:nth-child(n+2) {
+  margin-top: 5px;
+}
+.block1__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+  font-size: calc(1.325rem + 0.9vw);
+  font-family: "UTM Helve Bold", sans-serif;
+  line-height: 1.375;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .block1__title {
+    font-size: 2rem;
+  }
+}
+.block1__title:after {
+  content: var(--txt-after);
+  width: 259px;
+  height: 66px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--bg-block1-line);
+}
+
 .home__hinhanh {
   position: relative;
   background-image: var(--bg-hinhanh);
@@ -1802,6 +1955,9 @@
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   padding: 12px;
+}
+.baiviet__card--hv {
+  padding: 8px;
 }
 .baiviet__card:hover {
   background: #EEF2FF;

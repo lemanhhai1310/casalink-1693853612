@@ -1,5 +1,6 @@
 <?php $data["title"] = "Home page 2"; ?>
 <?php $bodyClass = '' ?>
+<?php $isHome = '' ?>
 <?php $isLogin = false ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div uk-slideshow="animation: push; min-height: 300; max-height: 736">
@@ -25,6 +26,10 @@
     </div>
 
 </div>
+
+<!--block1-->
+<?php require "template-parts/layouts/block1.php"; ?>
+<!--/block1-->
 
 <!--Môi trường học tập tràn đầy tình yêu thương tại Casalink-->
 <div class="uk-section home__hinhanh" style="--bg-hinhanh: url(images/Rectangle_140604.png)">

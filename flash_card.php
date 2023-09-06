@@ -53,10 +53,12 @@
 </div>
 <!--/Câu hỏi thường gặp-->
 
+<!--PHẢN HỒI TỪ CHÍNH HỌC VIÊN-->
 <div class="uk-section">
     <div class="uk-container">
         <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Phản hồi từ chính học viên</h2>
         <?php require "template-parts/layouts/galery.php"; ?>
     </div>
 </div>
+<!--PHẢN HỒI TỪ CHÍNH HỌC VIÊN-->
 <?php require "template-parts/layouts/footer.php"; ?>
