@@ -1108,6 +1108,19 @@
   font-size: 14px;
   font-family: "UTM Helve Regular", sans-serif;
 }
+.header__bottom .uk-navbar-dropdown {
+  padding: 10px 0px;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+.header__bottom .uk-navbar-dropdown-nav > li > a {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "UTM Helve Regular", sans-serif;
+}
+.header__bottom .uk-navbar-dropdown-nav > li > a:hover {
+  color: var(--Blue, #273E8A);
+}
 
 .footer {
   background-color: var(--Blue, #273E8A);
