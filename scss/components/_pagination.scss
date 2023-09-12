@@ -1,0 +1,31 @@
+.pagination{
+  >li{
+    >*{
+      font-size: 16px;
+      font-family: $font-HelveBold;
+      color: rgba(28, 29, 31, 0.50);
+    }
+    >a{
+      span{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(#1C1D1F,.2);
+      }
+      &:hover{
+        span{
+          border-color: #E92629;
+          color: #E92629;
+        }
+      }
+    }
+    &.uk-active{
+      >span{
+        color: var(--Red, #E92629);
+      }
+    }
+  }
+}
