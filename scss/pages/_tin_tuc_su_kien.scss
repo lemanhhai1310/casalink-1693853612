@@ -40,6 +40,19 @@
         color: rgba(0, 0, 0, 0.40);
       }
     }
+    &__icon{
+      color: #fff !important;
+    }
+    &__datetime{
+      padding: 0 20px;
+      width: 160px;
+      border-radius: 12px;
+      background: var(--Blue-P, #199BD3) !important;
+      color: #fff !important;
+      @include media-breakpoint-up('m'){
+        height: #{$x} !important;
+      }
+    }
     &__btnSort{
       border-radius: 12px;
       background: var(--Blue-P, #199BD3);
@@ -87,5 +100,19 @@
     &__content{
 
     }
+  }
+}
+.ui-datepicker{
+  background:
+    url(images/tintucsukien/Ellipse_3.png) no-repeat bottom left,
+    url(images/tintucsukien/Ellipse_1.png) no-repeat top left,
+    url(images/tintucsukien/Ellipse_1-2.png) no-repeat center right;
+  background-color: #EFEBC3;
+  //padding: 15px;
+  border-radius: 10px;
+  &-header{
+    background: transparent;
+    border: none;
+    color: #262626;
   }
 }

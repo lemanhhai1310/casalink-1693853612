@@ -1252,7 +1252,7 @@
   }
 }
 .blockForm__sectionContent {
-  padding-bottom: 70px;
+  padding-bottom: 145px;
 }
 @media (min-width: 960px) {
   .blockForm__sectionContent {
@@ -2289,6 +2289,21 @@
 .tintuc__formSearch__input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
+.tintuc__formSearch__icon {
+  color: #fff !important;
+}
+.tintuc__formSearch__datetime {
+  padding: 0 20px;
+  width: 160px;
+  border-radius: 12px;
+  background: var(--Blue-P, #199BD3) !important;
+  color: #fff !important;
+}
+@media (min-width: 960px) {
+  .tintuc__formSearch__datetime {
+    height: 56px !important;
+  }
+}
 .tintuc__formSearch__btnSort {
   border-radius: 12px;
   background: var(--Blue-P, #199BD3);
@@ -2344,4 +2359,14 @@
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+}
+.ui-datepicker {
+  background: url(images/tintucsukien/Ellipse_3.png) no-repeat bottom left, url(images/tintucsukien/Ellipse_1.png) no-repeat top left, url(images/tintucsukien/Ellipse_1-2.png) no-repeat center right;
+  background-color: #EFEBC3;
+  border-radius: 10px;
+}
+.ui-datepicker-header {
+  background: transparent;
+  border: none;
+  color: #262626;
 }

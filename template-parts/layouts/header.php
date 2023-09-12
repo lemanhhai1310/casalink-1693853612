@@ -14,13 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Paytone+One&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/css/uikit.min.css" />
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
     <link rel="stylesheet" href="style.css?v=<?php echo(time()) ?>">
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
+
+    <!-- Javascript -->
+    <script>
+        $(function() {
+            $( "#datepicker-13" ).datepicker();
+            // $( "#datepicker-13" ).datepicker("show");
+        });
+    </script>
 </head>
 <body class="" style="background:<?= (isset($isLogin) && $isLogin) ? '#FFF' : '#FFFCF3' ?>">
 <!--app-->

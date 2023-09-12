@@ -36,18 +36,9 @@
                         </form>
                     </div>
                     <div class="uk-width-auto">
-                        <div uk-form-custom="target: > * > span:first-child">
-                            <select aria-label="Custom controls">
-                                <option value="">Bây giờ</option>
-                                <option value="1">Option 01</option>
-                                <option value="2">Option 02</option>
-                                <option value="3">Option 03</option>
-                                <option value="4">Option 04</option>
-                            </select>
-                            <button class="tintuc__formSearch__btnSort uk-button uk-button-primary" type="button" tabindex="-1">
-                                <span></span>
-                                <span uk-icon="icon: chevron-down"></span>
-                            </button>
+                        <div class="uk-inline">
+                            <a class="tintuc__formSearch__icon uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: calendar"></a>
+                            <input id = "datepicker-13" class="uk-input tintuc__formSearch__datetime" type="text" value="Bây giờ" aria-label="Clickable icon">
                         </div>
                     </div>
                 </div>
