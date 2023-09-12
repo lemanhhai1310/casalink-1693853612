@@ -108,11 +108,16 @@
     .uk-navbar-dropdown-nav{
       >li{
         >a{
-          padding: 10px 20px;
+          padding: 6px 20px;
           //color: var(--Blue, #273E8A);
           @include font-size(16px);
           font-family: $font-Helve;
           &:hover{
+            color: var(--Blue, #273E8A);
+          }
+        }
+        &.uk-active{
+          >a{
             color: var(--Blue, #273E8A);
           }
         }

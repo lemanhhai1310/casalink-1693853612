@@ -1,6 +1,6 @@
 <div
     style="
-        --bg-after: url(images/Group-45444.png);
+        --bg-after: url(images/Group_45448.png);
     "
     class="blockForm uk-background-bottom-center uk-background-norepeat">
     <div class="blockForm__sectionContent uk-section uk-width uk-position-relative uk-position-z-index">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="uk-flex-first@m uk-width-expand">
-                    <img src="images/Group-45443-2.png" alt="">
+                    <img src="images/Group_45447-2.png" alt="">
                 </div>
             </div>
         </div>

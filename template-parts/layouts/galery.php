@@ -5,42 +5,42 @@
             array(
                 'w' => 320,
                 'h' => 286,
-                'img' => 'images/photo.jpg',
+                'img' => 'images/hinhanh/4.jpeg',
             ),
             array(
                 'w' => 320,
                 'h' => 394,
-                'img' => 'images/light.jpg',
+                'img' => 'images/hinhanh/9.jpeg',
             ),
             array(
                 'w' => 320,
                 'h' => 286,
-                'img' => 'images/dark.jpg',
+                'img' => 'images/hinhanh/13.JPG',
             ),
             array(
                 'w' => 320,
                 'h' => 366,
-                'img' => 'images/photo.jpg',
+                'img' => 'images/hinhanh/14.JPG',
             ),
             array(
                 'w' => 320,
                 'h' => 394,
-                'img' => 'images/light.jpg',
+                'img' => 'images/hinhanh/15.jpeg',
             ),
             array(
                 'w' => 320,
                 'h' => 286,
-                'img' => 'images/dark.jpg',
+                'img' => 'images/hinhanh/16.JPG',
             ),
             array(
                 'w' => 320,
                 'h' => 394,
-                'img' => 'images/photo.jpg',
+                'img' => 'images/hinhanh/17.JPG',
             ),
             array(
                 'w' => 320,
                 'h' => 314,
-                'img' => 'images/light.jpg',
+                'img' => 'images/hinhanh/18.JPG',
             ),
         );
         foreach ($data as $k => $v): ?>

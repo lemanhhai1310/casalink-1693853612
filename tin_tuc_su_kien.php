@@ -3,6 +3,79 @@
 <?php $isLogin = false ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<div
+    style="
+    --tintuc-1: url(images/tintucsukien/Frame_55.png);
+    --tintuc-2: url(images/tintucsukien/pattern_1.png);
+    --tintuc-3: url(images/tintucsukien/Frame_23.png);
+    --tintuc-4: url(images/tintucsukien/image_1-3.png);
+    --tintuc-5: url(images/tintucsukien/pngegg_1_2.png);
+    --tintuc-6: url(images/tintucsukien/Frame_30.png);
+    --tintuc-7: url(images/tintucsukien/0601_4_1_1.png);
+    "
+    class="tintuc__banner uk-background-image@m uk-light uk-flex uk-flex-middle">
+    <div class="uk-section uk-width">
+        <div class="uk-container">
+            <h1 class="tintuc__banner__title">Thư viện tài liệu <br> Casalink</h1>
+        </div>
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png); align-items: flex-start;">Tin tức và sự kiện</h2>
+            </div>
+            <div class="uk-width-auto@m">
+                <div class="uk-grid-small uk-grid-40-m" uk-grid>
+                    <div class="uk-width-expand">
+                        <form class="uk-search tintuc__formSearch uk-search-default">
+                            <span class="uk-search-icon-flip" uk-search-icon></span>
+                            <input class="uk-search-input tintuc__formSearch__input" type="search" placeholder="Tìm kiếm tin tức sự kiện" aria-label="Tìm kiếm tin tức sự kiện">
+                        </form>
+                    </div>
+                    <div class="uk-width-auto">
+                        <div uk-form-custom="target: > * > span:first-child">
+                            <select aria-label="Custom controls">
+                                <option value="">Bây giờ</option>
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                                <option value="4">Option 04</option>
+                            </select>
+                            <button class="tintuc__formSearch__btnSort uk-button uk-button-primary" type="button" tabindex="-1">
+                                <span></span>
+                                <span uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="tintuc__accordion uk-margin-large-top" uk-accordion>
+            <?php for ($i=1;$i<=4;$i++): ?>
+            <li class="tintuc__accordion__li <?= ($i==1)? 'uk-open' : '' ?>">
+                <a class="uk-accordion-title tintuc__accordion__title" href="#">Tháng <?= 8 - $i ?>, 2023</a>
+                <div class="uk-accordion-content tintuc__accordion__content">
+                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-20-m" uk-grid>
+                        <div>
+                            <?php require "template-parts/layouts/tintuc_card.php"; ?>
+                        </div>
+                        <div>
+                            <?php require "template-parts/layouts/tintuc_card.php"; ?>
+                        </div>
+                        <div>
+                            <?php require "template-parts/layouts/tintuc_card.php"; ?>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <?php endfor; ?>
+        </ul>
+    </div>
+</div>
+
 <!--ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
 <?php require "template-parts/layouts/block_dangkyhocthu.php"; ?>
 <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->

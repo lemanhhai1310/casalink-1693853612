@@ -3,6 +3,10 @@
 <?php $isLogin = false ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<!--Đa dạng hình thức học tập-->
+<?php require "template-parts/layouts/block_hinhthuchoctap.php"; ?>
+<!--/Đa dạng hình thức học tập-->
+
 <!--ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
 <?php require "template-parts/layouts/block_dangkyhocthu.php"; ?>
 <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->

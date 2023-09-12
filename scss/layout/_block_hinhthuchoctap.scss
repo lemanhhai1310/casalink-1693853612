@@ -1,0 +1,40 @@
+.hoctap{
+  &__input-group{
+    &__input{
+      padding: 14px 10px 3px;
+      min-height: 42px;
+      border-color: #000;
+      background-color: transparent;
+      &:is(:focus,:valid){
+        background-color: #fff;
+        border-color: #1e87f0;
+        color: #666;
+      }
+      &:is(:valid){
+        background-color: #faffbd;
+      }
+      &:focus + label{
+        @extend .hoctap__input-group__dc;
+      }
+      &:valid + label{
+        @extend .hoctap__input-group__dc;
+      }
+    }
+    &__label{
+      letter-spacing: 0.52px;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+      color: #000 !important;
+      position: absolute;
+      left: 10px;
+      top: 0;
+      line-height: 42px;
+      transform-origin: left top;
+      transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+      pointer-events: none;
+    }
+    &__dc{
+      transform: translateY(-5px) scale(0.8);
+    }
+  }
+}
