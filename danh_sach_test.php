@@ -7,6 +7,7 @@
     --dstest-bg1: url(images/dstest/Vector-2.png);
     --dstest-bg2: url(images/dstest/OBJECTS-2.png);
     --dstest-bg3: url(images/dstest/pngegg_1_3-2.png);
+    --dstest-bg: url(images/dstest/P.png);
     "
     class="uk-section dstest__banner uk-background-image@m"></div>
 <div class="uk-section">

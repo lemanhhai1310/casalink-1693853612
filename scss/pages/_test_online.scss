@@ -1,0 +1,66 @@
+.testoln{
+  &__banner{
+    @include media-breakpoint-up('m'){
+      min-height: 400px;
+    }
+    background: var(--testonline-color) var(--testonline-bgurl) no-repeat center;
+  }
+  &__title1{
+    background: url(images/testoln/Group-10.png) no-repeat center;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    @include font-size(32px);
+    line-height: 1.5;
+    font-family: $font-HelveBold;
+    text-transform: uppercase;
+    @include media-breakpoint-down('xs'){
+      background-size: contain;
+    }
+    span{
+      position: relative;
+      &:before{
+        content: "";
+        width: 93px;
+        height: 131px;
+        display: flex;
+        position: absolute;
+        top: -64px;
+        left: -135px;
+        background-size: contain;
+        background: url(images/testoln/Group-9.png) no-repeat center;
+        opacity: 0;
+        @include media-breakpoint-up('m'){
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__section{
+    background:
+      url(images/testoln/Frame_427322640.png) no-repeat top left,
+      url(images/testoln/Group_164.png) no-repeat top right;
+  }
+  &__item{
+    &__box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 140px;
+      padding-right: 0px;
+    }
+    &__img{
+      min-height: 322px;
+    }
+    &__title{
+      @include font-size(36px);
+      line-height: 1.33;
+      font-family: $font-HelveBold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}

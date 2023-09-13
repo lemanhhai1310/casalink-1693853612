@@ -30,15 +30,12 @@
             <div class="uk-width-auto@m">
                 <div class="uk-grid-small uk-grid-40-m" uk-grid>
                     <div class="uk-width-expand">
-                        <form class="uk-search tintuc__formSearch uk-search-default">
-                            <span class="uk-search-icon-flip" uk-search-icon></span>
-                            <input class="uk-search-input tintuc__formSearch__input" type="search" placeholder="Tìm kiếm tin tức sự kiện" aria-label="Tìm kiếm tin tức sự kiện">
-                        </form>
+                        <?php require "template-parts/layouts/blockSearch.php"; ?>
                     </div>
                     <div class="uk-width-auto">
                         <div class="uk-inline">
-                            <a class="tintuc__formSearch__icon uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: calendar"></a>
-                            <input id = "datepicker-13" class="uk-input tintuc__formSearch__datetime" type="text" value="Bây giờ" aria-label="Clickable icon">
+                            <span class="tintuc__formSearch__icon uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input id = "datepicker-13" class="uk-input tintuc__formSearch__datetime" type="text" value="Bây giờ" aria-label="Not clickable icon">
                         </div>
                     </div>
                 </div>

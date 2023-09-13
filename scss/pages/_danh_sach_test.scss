@@ -1,11 +1,17 @@
 .dstest{
   &__banner{
-    min-height: 200px;
-    background:
-      var(--dstest-bg1) no-repeat bottom left 97px,
-      var(--dstest-bg2) no-repeat center,
-      var(--dstest-bg3) no-repeat bottom left;
-    background-color: var(--Blue, #273E8A);
+    min-height: 100px;
+    @include media-breakpoint-up('m'){
+      min-height: 200px;
+    }
+    //background:
+    //  var(--dstest-bg1) no-repeat bottom left 97px,
+    //  var(--dstest-bg2) no-repeat center,
+    //  var(--dstest-bg3) no-repeat bottom left;
+    //background-color: var(--Blue, #273E8A);
+    background: #273E8A
+    var(--dstest-bg) no-repeat bottom center;
+    background-size: contain;
   }
   &__title{
     text-transform: uppercase;

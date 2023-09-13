@@ -21,6 +21,7 @@
   }
   &__formSearch{
     $x:56px;
+    width: 100%;
     @include media-breakpoint-up('m'){
       width: 480px;
     }
