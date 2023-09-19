@@ -13,9 +13,16 @@
     }
   }
   &-container{
-    max-width: 1280px;
+    $w: 1280px;
+    max-width: #{$w};
     &-small{
       max-width: 846px;
+    }
+    &-expand{
+      &-left,
+      &-right{
+        max-width: calc(50% + (#{$w} / 2) - 40px);
+      }
     }
   }
   &-lightbox{

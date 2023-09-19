@@ -46,6 +46,9 @@
 .uk-container-small {
   max-width: 846px;
 }
+.uk-container-expand-left, .uk-container-expand-right {
+  max-width: calc(50% + (1280px / 2) - 40px);
+}
 .uk-lightbox {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -1794,6 +1797,67 @@
 }
 .home__hinhanh__grid1 {
   padding: 6px;
+}
+.home__video {
+  background: #199BD3 url(images/video/image1-5.png) no-repeat top right;
+  position: relative;
+}
+.home__video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(39, 62, 138, 0.5);
+}
+.home__video__txt {
+  color: #FAF2F2;
+  font-size: 16px;
+  font-family: "UTM Helve Regular", sans-serif;
+  line-height: 1.75;
+}
+.home__sugia {
+  background: url(images/sugia/Group_128.png) no-repeat bottom -250px left;
+}
+.home__sugia__btn {
+  line-height: 46px;
+  border-radius: 8px;
+  background: #E92629;
+  text-transform: inherit;
+  font-size: 1rem;
+  font-family: "UTM Helve Bold", sans-serif;
+  padding: 0 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.home__sugia__btn:after {
+  position: relative;
+  top: 2px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='16' viewBox='0 0 19 16' fill='none'%3E%3Cpath d='M16.8747 7.7335C16.8018 7.66683 16.8018 7.60016 16.7288 7.5335L12.3538 3.5335C12.0622 3.26683 11.6247 3.26683 11.333 3.5335C11.0413 3.80016 11.0413 4.20016 11.333 4.46683L14.4684 7.3335H3.09342C2.65592 7.3335 2.36426 7.60016 2.36426 8.00016C2.36426 8.40016 2.65592 8.66683 3.09342 8.66683H14.4684L11.333 11.5335C11.0413 11.8002 11.0413 12.2002 11.333 12.4668C11.4788 12.6002 11.6976 12.6668 11.8434 12.6668C11.9893 12.6668 12.208 12.6002 12.3538 12.4668L16.7288 8.46683C16.8018 8.40016 16.8747 8.3335 16.8747 8.26683C16.9476 8.06683 16.9476 7.9335 16.8747 7.7335Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home__sugia__txt {
+  color: #262626;
+  font-size: 1rem;
+  font-family: "UTM Helve Regular", sans-serif;
+  line-height: 1.75;
+}
+.home__sugia__txt div {
+  font-family: "UTM Helve Bold", sans-serif;
+  color: var(--Red, #E92629);
 }
 
 @media (min-width: 960px) {

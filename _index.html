@@ -11,16 +11,26 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Paytone+One&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1693986867">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/css/uikit.min.css" />
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <link rel="stylesheet" href="style.css?v=1695117315">
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1693986867"></script>
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1695117315"></script>
+
+    <!-- Javascript -->
+    <script>
+        $(function() {
+            $( "#datepicker-13" ).datepicker();
+            // $( "#datepicker-13" ).datepicker("show");
+        });
+    </script>
 </head>
 <body class="" style="background:#FFFCF3">
 <!--app-->
@@ -143,8 +153,202 @@
 
         </div>
 
+        <!--Danh sách khoá học-->
+        <div class="uk-section"  uk-toggle="cls: khoahoc__bg; mode: media; media: @m">
+            <div class="uk-container">
+                <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Danh sách khoá học</h2>
+                <div class="uk-margin-medium-top" uk-slider="finite: false; sets: false">
+
+                    <div class="uk-position-relative">
+
+                        <div class="baiviet__slider-container-offset uk-slider-container-offset uk-slider-container">
+                            <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small uk-grid-20-m" uk-grid>
+                                <li>
+                                    <div class="baiviet__card baiviet__card--hv uk-card uk-padding-small uk-card-default uk-card-body">
+                                        <div class="baiviet__card__coverImg uk-cover-container">
+                                            <img src="images/noimage.jpg" alt="" uk-cover="">
+                                            <canvas width="289" height="184"></canvas>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baiviet__card baiviet__card--hv uk-card uk-padding-small uk-card-default uk-card-body">
+                                        <div class="baiviet__card__coverImg uk-cover-container">
+                                            <img src="images/noimage.jpg" alt="" uk-cover="">
+                                            <canvas width="289" height="184"></canvas>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baiviet__card baiviet__card--hv uk-card uk-padding-small uk-card-default uk-card-body">
+                                        <div class="baiviet__card__coverImg uk-cover-container">
+                                            <img src="images/noimage.jpg" alt="" uk-cover="">
+                                            <canvas width="289" height="184"></canvas>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baiviet__card baiviet__card--hv uk-card uk-padding-small uk-card-default uk-card-body">
+                                        <div class="baiviet__card__coverImg uk-cover-container">
+                                            <img src="images/noimage.jpg" alt="" uk-cover="">
+                                            <canvas width="289" height="184"></canvas>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baiviet__card baiviet__card--hv uk-card uk-padding-small uk-card-default uk-card-body">
+                                        <div class="baiviet__card__coverImg uk-cover-container">
+                                            <img src="images/noimage.jpg" alt="" uk-cover="">
+                                            <canvas width="289" height="184"></canvas>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-hidden@s uk-light">
+                            <a uk-icon="icon: arrow-left; ratio: 1.3" class="baiviet__icon baiviet__icon--previous uk-position-center-left uk-position-small" href="#" uk-slidenav-previous1 uk-slider-item="previous"></a>
+                            <a uk-icon="icon: arrow-right; ratio: 1.3" class="baiviet__icon baiviet__icon--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next1 uk-slider-item="next"></a>
+                        </div>
+
+                        <div class="uk-visible@s">
+                            <a uk-icon="icon: arrow-left; ratio: 1.3" class="baiviet__icon baiviet__icon--previous uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous1 uk-slider-item="previous"></a>
+                            <a uk-icon="icon: arrow-right; ratio: 1.3" class="baiviet__icon baiviet__icon--next uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next1 uk-slider-item="next"></a>
+                        </div>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-hidden@s uk-dotnav uk-flex-center uk-margin uk-position-relative"></ul>
+
+                </div>
+            </div>
+        </div><!--/Danh sách khoá học-->
+
+        <!--Trung tâm anh ngữ Casalink-->
+        <div class="home__video uk-light">
+            <div class="uk-position-relative">
+                <div class="uk-container uk-container-expand-left uk-padding-remove-left">
+                    <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto@m">
+                            <div class="uk-position-relative">
+                                <img src="images/video/Group45444-3.png" alt="">
+                                <a href="#modal-media-youtube" uk-toggle class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                        <circle cx="30" cy="30" r="30" fill="white" fill-opacity="0.2"/>
+                                        <circle cx="30" cy="30" r="25" fill="white" fill-opacity="0.8"/>
+                                        <path d="M38.75 27.8349C40.4167 28.7972 40.4167 31.2028 38.75 32.1651L27.5 38.6603C25.8333 39.6225 23.75 38.4197 23.75 36.4952L23.75 23.5048C23.75 21.5803 25.8333 20.3775 27.5 21.3397L38.75 27.8349Z" fill="#273E8A"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-card uk-card-body">
+                                <h2
+                                        class="uk-text-left baiviet__title"
+                                        style="--icon-title-bottom: url(images/tailieu/Frame_427322377-2.png); align-items: flex-start">
+                                    Trung tâm anh ngữ Casalink
+                                </h2>
+                                <p class="uk-margin-medium home__video__txt">CASALINK - là chuỗi hệ thống đào tạo Anh Ngữ cho trẻ em từ 4đến 14 tuổi, với triết lý giáo dục bắt nguồn từ tình yêu thương sâusắc dành cho trẻ nhỏ và phương pháp giảng dạy bắt nguồn từ sựtận tâm của những người thầy, những người làm giáo dục thực sự.Với tất cả tâm huyết ấy, CASALINK hy vọng sẽ trở thành nơi thứ 3,sau gia đình và trường học, nuôi dưỡng tâm hồn và phát triển tàinăng của con trẻ</p>
+                                <div>
+                                    <a href="" class="home__sugia__btn uk-button uk-button-danger uk-button-large">Tìm hiểu thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" uk-video uk-responsive></iframe>
+            </div>
+        </div>
+        <!--/Trung tâm anh ngữ Casalink-->
+
+        <!--Hệ sinh thái sản phẩm tại Casalink-->
+        <div class="uk-height-min-large uk-section hesinhthai__bg">
+            <div class="uk-container uk-container-small">
+                <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Hệ sinh thái sản phẩm tại Casalink</h2>
+                <div class="uk-margin-medium-top uk-position-relative">
+                    <div class="uk-visible@m">
+                        <img src="images/Group_45447.png" alt="">
+                        <div class="hesinhthai__box uk-position-cover uk-flex uk-flex-middle">
+                            <div class="uk-width">
+                                <div class="" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <a href=""><img src="images/Group_116.png" alt=""></a>
+                                    </div>
+                                    <div class="uk-width-expand uk-text-right">
+                                        <a href=""><img src="images/Group_115.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="uk-margin-xlarge-top" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <a href=""><img src="images/Group_117.png" alt=""></a>
+                                    </div>
+                                    <div class="uk-width-expand uk-text-right">
+                                        <a href=""><img src="images/Group_118.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@m">
+                        <img src="images/Group_45446-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div><!--/Hệ sinh thái sản phẩm tại Casalink-->
+
         <!--ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
-        <!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
+        <div class="dangkyhocthu uk-flex uk-flex-middle uk-text-center uk-background-norepeat uk-background-center-center" data-src="images/Frame_427322380.png" uk-img>
+            <div class="uk-width uk-section-small">
+                <div class="uk-container">
+                    <div class="uk-position-relative dangkyhocthu__box">
+                        <h2 class="uk-position-bottom">ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ</h2>
+                        <h2>ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ</h2>
+                    </div>
+                    <a href="" class="dangkyhocthu__btn uk-button uk-button-primary uk-button-large uk-border-pill"><span class="uk-position-relative">ĐĂng ký ngay</span></a>
+                </div>
+            </div>
+        </div><!--/ĐĂNG KÝ TRẢI NGHIỆM HỌC THỬ MIỄN PHÍ-->
+
+        <!--Tại sao? ba mẹ nên chọn Casalink-->
+        <div class="uk-section taisao__bg">
+            <div class="uk-container">
+                <h2 class="taisao__title" style="--txt-taisao-before:'Tại sao?'">ba mẹ nên chọn Casalink</h2>
+                <div class="uk-margin-large-top">
+                    <img src="images/Group_214.png" alt="">
+                </div>
+            </div>
+        </div><!--/Tại sao? ba mẹ nên chọn Casalink-->
+
+        <!--Những sứ giả truyền cảm hứng tại Casalink-->
+        <div class="uk-section-large home__sugia">
+            <div class="uk-container">
+                <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                    <div>
+                        <h2
+                                class="uk-text-left baiviet__title"
+                                style="--icon-title-bottom: url(images/Frame_427322377.png); align-items: flex-start">
+                            <div>Những sứ giả truyền cảm hứng tại <span style="color: #E92629;">Casalink</span></div>
+                        </h2>
+                        <div class="uk-margin-medium home__sugia__txt">
+                            Đội ngũ giáo viên là một thế mạnh của Casalink khi quy tụ những Giáo viên có năng lực và nhiều kinh nghiệm giảng dạy tốt nghiệp tại các trường đại học hàng đầu về giảng dạy tiếng Anh tại Việt Nam. Như một người lái đò thầm lặng, các thầy cô tại CASALink luôn sống hết mình và sống trọn đam mê với nghề giáo. Giá trị cốt lõi mà chúng tôi hướng đến trong công cuộc giáo dục, xây dựng con người đó chính là
+                            <div>GIÁO VIÊN TÂM SÁNG – DẠY HỌC BẰNG TÌNH YÊU THƯƠNG.</div>
+                        </div>
+                        <div>
+                            <a href="" class="home__sugia__btn uk-button uk-button-danger uk-button-large">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/sugia/Group_45443-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Những sứ giả truyền cảm hứng tại Casalink-->
 
         <!--block1-->
         <div class="uk-section block1__bg block1__bg--home">
@@ -370,9 +574,9 @@
                         <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-12" uk-grid="masonry: true" uk-lightbox="animation: slide">
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/photo.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/4.jpeg" alt="" uk-cover="">
                                     <canvas width="320" height="286"></canvas>
-                                    <a href="images/photo.jpg"  data-caption="Caption 0" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/4.jpeg"  data-caption="Caption 0" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -383,9 +587,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/light.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/9.jpeg" alt="" uk-cover="">
                                     <canvas width="320" height="394"></canvas>
-                                    <a href="images/light.jpg"  data-caption="Caption 1" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/9.jpeg"  data-caption="Caption 1" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -396,9 +600,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/dark.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/13.JPG" alt="" uk-cover="">
                                     <canvas width="320" height="286"></canvas>
-                                    <a href="images/dark.jpg"  data-caption="Caption 2" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/13.JPG"  data-caption="Caption 2" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -409,9 +613,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/photo.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/14.JPG" alt="" uk-cover="">
                                     <canvas width="320" height="366"></canvas>
-                                    <a href="images/photo.jpg"  data-caption="Caption 3" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/14.JPG"  data-caption="Caption 3" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -422,9 +626,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/light.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/15.jpeg" alt="" uk-cover="">
                                     <canvas width="320" height="394"></canvas>
-                                    <a href="images/light.jpg"  data-caption="Caption 4" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/15.jpeg"  data-caption="Caption 4" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -435,9 +639,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/dark.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/16.JPG" alt="" uk-cover="">
                                     <canvas width="320" height="286"></canvas>
-                                    <a href="images/dark.jpg"  data-caption="Caption 5" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/16.JPG"  data-caption="Caption 5" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -448,9 +652,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/photo.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/17.JPG" alt="" uk-cover="">
                                     <canvas width="320" height="394"></canvas>
-                                    <a href="images/photo.jpg"  data-caption="Caption 6" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/17.JPG"  data-caption="Caption 6" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -461,9 +665,9 @@
                             </div>
                             <div>
                                 <div class="uk-cover-container uk-inline-clip uk-transition-toggle">
-                                    <img src="images/light.jpg" alt="" uk-cover="">
+                                    <img src="images/hinhanh/18.JPG" alt="" uk-cover="">
                                     <canvas width="320" height="314"></canvas>
-                                    <a href="images/light.jpg"  data-caption="Caption 7" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <a href="images/hinhanh/18.JPG"  data-caption="Caption 7" class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle opacity="0.8" cx="22.4407" cy="22.4409" r="20" transform="rotate(-7.50411 22.4407 22.4409)" fill="#FC9905"/>
                                             <path d="M31.8729 21.6111C31.6942 21.3667 27.4371 15.6265 21.9999 15.6265C16.5627 15.6265 12.3054 21.3667 12.1269 21.6109C11.9577 21.8427 11.9577 22.1572 12.1269 22.3891C12.3054 22.6335 16.5627 28.3737 21.9999 28.3737C27.4371 28.3737 31.6942 22.6335 31.8729 22.3893C32.0423 22.1575 32.0423 21.8427 31.8729 21.6111ZM21.9999 27.055C17.9949 27.055 14.5261 23.2452 13.4992 21.9996C14.5247 20.753 17.9863 16.9451 21.9999 16.9451C26.0048 16.9451 29.4733 20.7544 30.5006 22.0005C29.4751 23.2471 26.0135 27.055 21.9999 27.055Z" fill="white"/>
@@ -482,122 +686,118 @@
         <div class="uk-section">
             <div class="uk-container">
                 <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Tin tức và sự kiện</h2>
-                <div class="uk-margin-medium-top" uk-slider="finite: true; sets: true">
+                <div class="uk-margin-medium-top">
+                    <div class="" uk-slider="finite: false; sets: false">
 
-                    <div class="uk-position-relative">
+                        <div class="uk-position-relative">
 
-                        <div class="baiviet__slider-container-offset uk-slider-container-offset uk-slider-container">
-                            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-20-m" uk-grid>
-                                <li>
-                                    <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
-                                        <div class="uk-flex uk-flex-column row-gap-24">
-                                            <div class="uk-flex uk-flex-column row-gap-16">
-                                                <div class="baiviet__card__coverImg uk-cover-container">
-                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
-                                                    <canvas width="389" height="260"></canvas>
+                            <div class="baiviet__slider-container-offset uk-slider-container-offset uk-slider-container">
+                                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-20-m" uk-grid>
+                                    <li>
+                                        <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
+                                            <div class="uk-flex uk-flex-column row-gap-24">
+                                                <div class="uk-flex uk-flex-column row-gap-16">
+                                                    <div class="baiviet__card__coverImg uk-cover-container">
+                                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                        <canvas width="389" height="260"></canvas>
+                                                    </div>
+                                                    <h4 class="baiviet__card__title uk-margin-remove"><a href="chi_tiet_bai_viet.php">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
+                                                    <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
                                                 </div>
-                                                <h4 class="baiviet__card__title uk-margin-remove"><a href="">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
-                                                <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
-                                            </div>
-                                            <div style="--icon-more: url(images/arrow-right_5_1.png)">
-                                                <a class="baiviet__card__linkMore uk-button uk-button-text" href="#">Chi tiết bài viết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
-                                        <div class="uk-flex uk-flex-column row-gap-24">
-                                            <div class="uk-flex uk-flex-column row-gap-16">
-                                                <div class="baiviet__card__coverImg uk-cover-container">
-                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
-                                                    <canvas width="389" height="260"></canvas>
+                                                <div style="--icon-more: url(images/arrow-right_5_1.png)">
+                                                    <a class="baiviet__card__linkMore uk-button uk-button-text" href="chi_tiet_bai_viet.php">Chi tiết bài viết</a>
                                                 </div>
-                                                <h4 class="baiviet__card__title uk-margin-remove"><a href="">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
-                                                <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
                                             </div>
-                                            <div style="--icon-more: url(images/arrow-right_5_1.png)">
-                                                <a class="baiviet__card__linkMore uk-button uk-button-text" href="#">Chi tiết bài viết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
-                                        <div class="uk-flex uk-flex-column row-gap-24">
-                                            <div class="uk-flex uk-flex-column row-gap-16">
-                                                <div class="baiviet__card__coverImg uk-cover-container">
-                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
-                                                    <canvas width="389" height="260"></canvas>
+                                        </div>                    </li>
+                                    <li>
+                                        <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
+                                            <div class="uk-flex uk-flex-column row-gap-24">
+                                                <div class="uk-flex uk-flex-column row-gap-16">
+                                                    <div class="baiviet__card__coverImg uk-cover-container">
+                                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                        <canvas width="389" height="260"></canvas>
+                                                    </div>
+                                                    <h4 class="baiviet__card__title uk-margin-remove"><a href="chi_tiet_bai_viet.php">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
+                                                    <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
                                                 </div>
-                                                <h4 class="baiviet__card__title uk-margin-remove"><a href="">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
-                                                <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
-                                            </div>
-                                            <div style="--icon-more: url(images/arrow-right_5_1.png)">
-                                                <a class="baiviet__card__linkMore uk-button uk-button-text" href="#">Chi tiết bài viết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
-                                        <div class="uk-flex uk-flex-column row-gap-24">
-                                            <div class="uk-flex uk-flex-column row-gap-16">
-                                                <div class="baiviet__card__coverImg uk-cover-container">
-                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
-                                                    <canvas width="389" height="260"></canvas>
+                                                <div style="--icon-more: url(images/arrow-right_5_1.png)">
+                                                    <a class="baiviet__card__linkMore uk-button uk-button-text" href="chi_tiet_bai_viet.php">Chi tiết bài viết</a>
                                                 </div>
-                                                <h4 class="baiviet__card__title uk-margin-remove"><a href="">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
-                                                <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
                                             </div>
-                                            <div style="--icon-more: url(images/arrow-right_5_1.png)">
-                                                <a class="baiviet__card__linkMore uk-button uk-button-text" href="#">Chi tiết bài viết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
-                                        <div class="uk-flex uk-flex-column row-gap-24">
-                                            <div class="uk-flex uk-flex-column row-gap-16">
-                                                <div class="baiviet__card__coverImg uk-cover-container">
-                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
-                                                    <canvas width="389" height="260"></canvas>
+                                        </div>                    </li>
+                                    <li>
+                                        <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
+                                            <div class="uk-flex uk-flex-column row-gap-24">
+                                                <div class="uk-flex uk-flex-column row-gap-16">
+                                                    <div class="baiviet__card__coverImg uk-cover-container">
+                                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                        <canvas width="389" height="260"></canvas>
+                                                    </div>
+                                                    <h4 class="baiviet__card__title uk-margin-remove"><a href="chi_tiet_bai_viet.php">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
+                                                    <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
                                                 </div>
-                                                <h4 class="baiviet__card__title uk-margin-remove"><a href="">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
-                                                <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
+                                                <div style="--icon-more: url(images/arrow-right_5_1.png)">
+                                                    <a class="baiviet__card__linkMore uk-button uk-button-text" href="chi_tiet_bai_viet.php">Chi tiết bài viết</a>
+                                                </div>
                                             </div>
-                                            <div style="--icon-more: url(images/arrow-right_5_1.png)">
-                                                <a class="baiviet__card__linkMore uk-button uk-button-text" href="#">Chi tiết bài viết</a>
+                                        </div>                    </li>
+                                    <li>
+                                        <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
+                                            <div class="uk-flex uk-flex-column row-gap-24">
+                                                <div class="uk-flex uk-flex-column row-gap-16">
+                                                    <div class="baiviet__card__coverImg uk-cover-container">
+                                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                        <canvas width="389" height="260"></canvas>
+                                                    </div>
+                                                    <h4 class="baiviet__card__title uk-margin-remove"><a href="chi_tiet_bai_viet.php">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
+                                                    <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
+                                                </div>
+                                                <div style="--icon-more: url(images/arrow-right_5_1.png)">
+                                                    <a class="baiviet__card__linkMore uk-button uk-button-text" href="chi_tiet_bai_viet.php">Chi tiết bài viết</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                        </div>                    </li>
+                                    <li>
+                                        <div class="baiviet__card uk-card uk-padding-small uk-card-default uk-card-body">
+                                            <div class="uk-flex uk-flex-column row-gap-24">
+                                                <div class="uk-flex uk-flex-column row-gap-16">
+                                                    <div class="baiviet__card__coverImg uk-cover-container">
+                                                        <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                        <canvas width="389" height="260"></canvas>
+                                                    </div>
+                                                    <h4 class="baiviet__card__title uk-margin-remove"><a href="chi_tiet_bai_viet.php">Những lưu ý khi học bảng phiên âm quốc tế IPA có thể bạn chưa biết?</a></h4>
+                                                    <div class="baiviet__card__time" style="--icon-datetime: url(images/calendar-interface-symbol-tool_1.png)">26/06/2023</div>
+                                                </div>
+                                                <div style="--icon-more: url(images/arrow-right_5_1.png)">
+                                                    <a class="baiviet__card__linkMore uk-button uk-button-text" href="chi_tiet_bai_viet.php">Chi tiết bài viết</a>
+                                                </div>
+                                            </div>
+                                        </div>                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-hidden@s uk-light">
+                                <a uk-icon="icon: arrow-left; ratio: 1.3" class="baiviet__icon baiviet__icon--previous uk-position-center-left uk-position-small" href="#" uk-slidenav-previous1 uk-slider-item="previous"></a>
+                                <a uk-icon="icon: arrow-right; ratio: 1.3" class="baiviet__icon baiviet__icon--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next1 uk-slider-item="next"></a>
+                            </div>
+
+                            <div class="uk-visible@s">
+                                <a uk-icon="icon: arrow-left; ratio: 1.3" class="baiviet__icon baiviet__icon--previous uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous1 uk-slider-item="previous"></a>
+                                <a uk-icon="icon: arrow-right; ratio: 1.3" class="baiviet__icon baiviet__icon--next uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next1 uk-slider-item="next"></a>
+                            </div>
+
                         </div>
 
-                        <div class="uk-hidden@s uk-light">
-                            <a uk-icon="icon: arrow-left; ratio: 1.3" class="baiviet__icon baiviet__icon--previous uk-position-center-left uk-position-small" href="#" uk-slidenav-previous1 uk-slider-item="previous"></a>
-                            <a uk-icon="icon: arrow-right; ratio: 1.3" class="baiviet__icon baiviet__icon--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next1 uk-slider-item="next"></a>
-                        </div>
+                        <ul class="uk-slider-nav uk-hidden@s uk-dotnav uk-flex-center uk-margin uk-position-relative"></ul>
 
-                        <div class="uk-visible@s">
-                            <a uk-icon="icon: arrow-left; ratio: 1.3" class="baiviet__icon baiviet__icon--previous uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous1 uk-slider-item="previous"></a>
-                            <a uk-icon="icon: arrow-right; ratio: 1.3" class="baiviet__icon baiviet__icon--next uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next1 uk-slider-item="next"></a>
-                        </div>
-
-                    </div>
-
-                    <ul class="uk-slider-nav uk-hidden@s uk-dotnav uk-flex-center uk-margin uk-position-relative"></ul>
-
-                </div>
+                    </div>        </div>
             </div>
         </div>
         <!--/Tin tức và sự kiện-->
     </main>
     <div
             style="
-        --bg-after: url(images/Group-45444.png);
+        --bg-after: url(images/Group_45448.png);
     "
             class="blockForm uk-background-bottom-center uk-background-norepeat">
         <div class="blockForm__sectionContent uk-section uk-width uk-position-relative uk-position-z-index">
@@ -651,7 +851,7 @@
                         </div>
                     </div>
                     <div class="uk-flex-first@m uk-width-expand">
-                        <img src="images/Group-45443-2.png" alt="">
+                        <img src="images/Group_45447-2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -712,14 +912,14 @@
                             <h4 class="footer__top__title footer__top__title--c1">Theo dõi chúng tôi</h4>
                             <div class="uk-flex column-gap-20 footer__top__social">
                                 <div>
-                                    <a href="">
+                                    <a href="" uk-tooltip="Facebook">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M8.08738 11.0333C8.02458 11.0333 6.70718 11.0337 6.09958 11.0331C5.78678 11.0329 5.67518 10.9205 5.67518 10.6057C5.67478 9.79712 5.67458 8.98852 5.67518 8.17992C5.67538 7.86912 5.79338 7.75052 6.10218 7.75032C6.70978 7.74992 8.01998 7.75012 8.08738 7.75012C8.08738 7.69472 8.08718 6.52732 8.08738 5.98972C8.08778 5.19492 8.22958 4.43412 8.63338 3.73752C9.04678 3.02452 9.64838 2.53612 10.4194 2.25372C10.9132 2.07272 11.4258 2.00052 11.9498 2.00012C12.6054 1.99972 13.261 2.00032 13.9168 2.00152C14.1986 2.00192 14.3236 2.12652 14.3242 2.41032C14.3254 3.17092 14.3254 3.93152 14.3242 4.69192C14.3238 4.97872 14.204 5.09392 13.9158 5.09712C13.3784 5.10292 12.8406 5.09932 12.3038 5.12092C11.7616 5.12092 11.4764 5.38572 11.4764 5.94692C11.4634 6.54052 11.471 7.13472 11.471 7.74992C11.5218 7.74992 13.0648 7.74972 13.786 7.74992C14.1136 7.74992 14.2256 7.86252 14.2256 8.19192C14.2256 8.99612 14.2254 9.80052 14.2248 10.6047C14.2246 10.9293 14.1194 11.0329 13.7898 11.0331C13.0686 11.0335 11.5316 11.0333 11.4644 11.0333V17.5423C11.4644 17.8893 11.3552 17.9999 11.0128 17.9999C10.178 17.9999 9.34298 18.0001 8.50818 17.9999C8.20558 17.9999 8.08758 17.8823 8.08758 17.5797C8.08738 15.4599 8.08738 11.1077 8.08738 11.0333Z" fill="#3D6AD6"/>
                                         </svg>
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="">
+                                    <a href="" uk-tooltip="Twitter">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <g clip-path="url(#clip0_34_209)">
                                                 <path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z" fill="#03A9F4"/>
@@ -733,7 +933,7 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="">
+                                    <a href="" uk-tooltip="Youtube">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M15.8463 2.92383H4.15374C1.85969 2.92383 0 4.78352 0 7.07757V12.9226C0 15.2166 1.85969 17.0763 4.15374 17.0763H15.8463C18.1403 17.0763 20 15.2166 20 12.9226V7.07757C20 4.78352 18.1403 2.92383 15.8463 2.92383ZM13.0371 10.2845L7.56814 12.8928C7.42241 12.9623 7.25408 12.8561 7.25408 12.6947V7.31488C7.25408 7.15115 7.42684 7.04503 7.57287 7.11905L13.0418 9.89045C13.2044 9.97284 13.2016 10.206 13.0371 10.2845Z" fill="#F61C0D"/>
                                         </svg>
