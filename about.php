@@ -50,4 +50,21 @@
     </div>
 </div>
 <!--/Tầm nhìn-->
+
+<!--Sứ mệnh-->
+<div class="about__sumenh uk-background-norepeat uk-background-center-center uk-background-image@m" data-src="images/about/Group45449-2.png" uk-img>
+    <div class="uk-section-small">
+        <div class="uk-container">
+            <div class="uk-flex-center" uk-grid>
+                <div class="uk-width-auto">
+                    <div class="about__sumenh__w590 about__sumenh__boxquote uk-text-center">
+                        <h2 class="about__sumenh__title">Sứ mệnh</h2>
+                        <p class="about__sumenh__desc">Sứ mệnh của chúng tôi là Xây dựng Môi trường học tập đầy cảm hứng, đánh thức nhà Vô địch bên trong mỗi đứa trẻ”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Sứ mệnh-->
 <?php require "template-parts/layouts/footer.php"; ?>
