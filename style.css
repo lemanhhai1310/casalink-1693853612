@@ -1874,6 +1874,15 @@
   color: var(--Red, #E92629);
 }
 
+.about__banner {
+  background-color: #B51618;
+}
+@media (min-width: 960px) {
+  .about__banner {
+    min-height: 200px;
+  }
+}
+
 @media (min-width: 960px) {
   .login .uk-container {
     padding-left: 80px;

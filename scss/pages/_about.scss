@@ -1,0 +1,8 @@
+.about{
+  &__banner{
+    background-color: #B51618;
+    @include media-breakpoint-up('m'){
+      min-height: 200px;
+    }
+  }
+}
