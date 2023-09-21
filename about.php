@@ -134,7 +134,7 @@
 <!--/Phương pháp đào tạo tại Casalink-->
 
 <!--Triết lý giáo dục Casalink-->
-<div class="about__trietly uk-background-norepeat uk-background-top-center uk-section uk-light" data-src="images/about/Group45451-3.png" uk-img>
+<div class="about__trietly uk-background-norepeat uk-background-top-center uk-section uk-light" data-src="images/about/Group45453-2.png" uk-img>
     <div class="uk-container">
         <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)"><div>Triết lý giáo dục <span style="color: #E92629;">Casalink</span></div></h2>
         <div class="uk-flex-right@m uk-margin-medium" uk-grid>
