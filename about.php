@@ -28,4 +28,26 @@
     </div>
 </div>
 <!--/Ý nghĩa logo và câu chuyện thương hiệu-->
+
+<!--Tầm nhìn-->
+<div class="about__tamnhin uk-light">
+    <div class="about__tamnhin__bg uk-background-image@m uk-flex uk-flex-middle uk-background-center-left uk-background-norepeat" data-src="images/about/Group45448-2.png" uk-img>
+        <div class="uk-width about__tamnhin__section">
+            <div class="uk-container">
+                <div class="uk-child-width-auto uk-flex-right@m uk-flex-middle uk-grid-50-m" uk-grid>
+                    <div>
+                        <div class="about__tamnhin__quote uk-text-center about__tamnhin__w421">
+                            <h2 class="about__tamnhin__quote__title">Tầm nhìn</h2>
+                            <p class="about__tamnhin__quote__desc">Đưa Casalink trở thành nơi đào tạo luyện thi tiếng Anh chất lượng cao hàng đầu Việt Nam</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/about/OBJECTS-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Tầm nhìn-->
 <?php require "template-parts/layouts/footer.php"; ?>
