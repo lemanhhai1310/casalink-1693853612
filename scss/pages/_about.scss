@@ -5,6 +5,53 @@
       min-height: 200px;
     }
   }
+  &__phuongphapdaotao{
+    &__gridTop{
+      @include media-breakpoint-up('m'){
+        margin-top: -120px !important;
+      }
+    }
+    &__w1057{
+      max-width: 100%;
+      width: 1057px;
+    }
+    &__boxcard{
+      @include media-breakpoint-up('m'){
+        min-height: 237px;
+        padding-top: 20px;
+      }
+      background: #fff;
+      box-shadow: 0px 11.005254745483398px 22.010509490966797px rgba(0, 0, 0, 0.12);
+    }
+    &__lineimg{
+      $x:97px;
+      .left &{
+        margin-left: #{$x};
+      }
+      .right &{
+        margin-right: #{$x};
+      }
+    }
+    &__avartar{
+      border: 12px solid #fff;
+    }
+    &__body{
+      padding-top: 12px;
+    }
+    &__title{
+      color: #fff;
+      max-width: 100%;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      @include font-size(20px);
+      font-family: $font-HelveBold;
+      margin-bottom: 40px;
+    }
+    &__desc{
+      @extend .home__sugia__txt;
+    }
+  }
   &__sumenh{
     @include media-breakpoint-up('m'){
       min-height: 400px;

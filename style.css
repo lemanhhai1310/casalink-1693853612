@@ -1863,13 +1863,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.home__sugia__txt {
+.home__sugia__txt, .about__phuongphapdaotao__desc {
   color: #262626;
   font-size: 1rem;
   font-family: "UTM Helve Regular", sans-serif;
   line-height: 1.75;
 }
-.home__sugia__txt div {
+.home__sugia__txt div, .about__phuongphapdaotao__desc div {
   font-family: "UTM Helve Bold", sans-serif;
   color: var(--Red, #E92629);
 }
@@ -1881,6 +1881,48 @@
   .about__banner {
     min-height: 200px;
   }
+}
+@media (min-width: 960px) {
+  .about__phuongphapdaotao__gridTop {
+    margin-top: -120px !important;
+  }
+}
+.about__phuongphapdaotao__w1057 {
+  max-width: 100%;
+  width: 1057px;
+}
+.about__phuongphapdaotao__boxcard {
+  background: #fff;
+  -webkit-box-shadow: 0px 11.0052547455px 22.010509491px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 11.0052547455px 22.010509491px rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 960px) {
+  .about__phuongphapdaotao__boxcard {
+    min-height: 237px;
+    padding-top: 20px;
+  }
+}
+.left .about__phuongphapdaotao__lineimg {
+  margin-left: 97px;
+}
+.right .about__phuongphapdaotao__lineimg {
+  margin-right: 97px;
+}
+.about__phuongphapdaotao__avartar {
+  border: 12px solid #fff;
+}
+.about__phuongphapdaotao__body {
+  padding-top: 12px;
+}
+.about__phuongphapdaotao__title {
+  color: #fff;
+  max-width: 100%;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  font-family: "UTM Helve Bold", sans-serif;
+  margin-bottom: 40px;
 }
 @media (min-width: 960px) {
   .about__sumenh {

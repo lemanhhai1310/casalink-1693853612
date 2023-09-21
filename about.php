@@ -59,7 +59,7 @@
                 <div class="uk-width-auto">
                     <div class="about__sumenh__w590 about__sumenh__boxquote uk-text-center">
                         <h2 class="about__sumenh__title">Sứ mệnh</h2>
-                        <p class="about__sumenh__desc">Sứ mệnh của chúng tôi là Xây dựng Môi trường học tập đầy cảm hứng, đánh thức nhà Vô địch bên trong mỗi đứa trẻ”</p>
+                        <p class="about__sumenh__desc">Sứ mệnh của chúng tôi là Xây dựng Môi trường học tập đầy cảm hứng, đánh thức nhà Vô địch bên trong mỗi đứa trẻ</p>
                     </div>
                 </div>
             </div>
@@ -67,4 +67,69 @@
     </div>
 </div>
 <!--/Sứ mệnh-->
+
+<!--Phương pháp đào tạo tại Casalink-->
+<div class="uk-section">
+    <div style="min-height: 605px" class="uk-background-norepeat uk-background-top-center uk-background-image@m" data-src="images/about/Vector-3.png" uk-img>
+        <div class="uk-container">
+            <div class="uk-flex-center" uk-grid>
+                <div class="uk-width-auto">
+                    <div class="about__phuongphapdaotao__w1057 uk-border-pill about__phuongphapdaotao__boxcard uk-card uk-card-body">
+                        <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)">Phương pháp đào tạo tại Casalink</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-child-width-1-3@m uk-margin-medium about__phuongphapdaotao__gridTop uk-grid-collapse" uk-grid>
+                <?php
+                $data = array(
+                    array(
+                        'class' => 'uk-text-center uk-text-right@m right',
+                        'userimg' => '',
+                        'lineimg' => 'images/about/Group45451-2.png',
+                        'bgimg' => 'images/about/Group182.png',
+                        'title' => 'Ứng dụng Mindmap để ghi nhớ',
+                        'desc' => 'Giúp các bé chủ động liệt kê kiến thức bằng cách tạo lập Mindmap để việc ghi nhớ lâu hơn và dễ dàng hơn.',
+                    ),
+                    array(
+                        'class' => 'uk-text-center',
+                        'userimg' => '',
+                        'lineimg' => 'images/about/Line12.png',
+                        'bgimg' => 'images/about/Group176.png',
+                        'title' => 'Sử dụng phương pháp Learning Pyramid',
+                        'desc' => 'Với tháp học tập Pyramid sẽ giúp các bé ghi nhớ hơn 90% kiến thức học được bằng nhiều hình thức khác nhau như thuyết trình, thảo luận, tự trải nghiệm và trở thành thầy cô giáo của chính mình.',
+                    ),
+                    array(
+                        'class' => 'uk-text-center uk-text-left@m left',
+                        'userimg' => '',
+                        'lineimg' => 'images/about/Group45450-2.png',
+                        'bgimg' => 'images/about/Group183.png',
+                        'title' => 'Phương pháp học VUI VẺ HOÁ NÃO BỘ',
+                        'desc' => 'Học tập trong VUI VẺ sẽ giúp con yêu hứng thú và yêu thích việc học tiếng Anh, từ đó ngữ pháp hay giao tiếp sẽ không còn cản trở trong cuộc đua trở thành nhà vô địch của các bé.',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                <div>
+                    <div class="<?= $v['class'] ?>">
+                        <div class="about__phuongphapdaotao__avartar uk-box-shadow-medium uk-cover-container uk-flex-inline uk-border-circle uk-background-default">
+                            <img src="images/noimage.jpg" alt="" uk-cover="">
+                            <canvas width="184" height="184"></canvas>
+                        </div>
+                    </div>
+                    <div class="<?= $v['class'] ?> uk-margin-small">
+                        <img class="about__phuongphapdaotao__lineimg" src="<?= $v['lineimg'] ?>" alt="">
+                    </div>
+                    <div class="uk-position-relative">
+                        <img src="<?= $v['bgimg'] ?>" alt="">
+                        <div class="uk-card uk-card-body about__phuongphapdaotao__body uk-position-cover uk-text-center">
+                            <h3 class="uk-card-title about__phuongphapdaotao__title"><?= $v['title'] ?></h3>
+                            <p class="about__phuongphapdaotao__desc"><?= $v['desc'] ?></p>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Phương pháp đào tạo tại Casalink-->
 <?php require "template-parts/layouts/footer.php"; ?>
