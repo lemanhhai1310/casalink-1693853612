@@ -1882,6 +1882,78 @@
     min-height: 200px;
   }
 }
+.about__trietly {
+  min-height: 704px;
+  padding-top: 60px;
+}
+@media (min-width: 960px) {
+  .about__trietly {
+    padding-top: 70px;
+  }
+}
+.about__trietly__title {
+  color: #FEE92A !important;
+  font-family: "Paytone One", sans-serif;
+  font-size: calc(1.3rem + 0.6vw);
+  line-height: 1.28;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #4F240C;
+}
+@media (min-width: 1200px) {
+  .about__trietly__title {
+    font-size: 1.75rem;
+  }
+}
+.about__trietly__coverContainer {
+  position: relative;
+}
+.about__trietly__coverContainer:before {
+  content: "";
+  background: var(--urlLine) no-repeat center;
+  background-size: contain;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+@media (min-width: 960px) {
+  .about__trietly__coverContainer:before {
+    opacity: 1;
+  }
+}
+.about__trietly__coverContainer:nth-child(1):before {
+  width: 288px;
+}
+.about__trietly__coverContainer:nth-child(2):before {
+  width: 299px;
+}
+.about__trietly__coverContainer:nth-child(3):before {
+  width: 357px;
+}
+.about__trietly__canvas {
+  height: 136px;
+}
+@media (min-width: 960px) {
+  .about__trietly__canvas {
+    height: 112px;
+  }
+}
+.about__trietly__box {
+  color: #9B2A06;
+  font-family: "UTM Helve Bold", sans-serif;
+  font-size: 1rem;
+}
+@media (min-width: 960px) {
+  .about__trietly__box {
+    padding-left: 30px;
+  }
+}
 @media (min-width: 960px) {
   .about__phuongphapdaotao__gridTop {
     margin-top: -120px !important;

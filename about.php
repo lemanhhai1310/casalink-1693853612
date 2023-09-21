@@ -132,4 +132,46 @@
     </div>
 </div>
 <!--/Phương pháp đào tạo tại Casalink-->
+
+<!--Triết lý giáo dục Casalink-->
+<div class="about__trietly uk-background-norepeat uk-background-top-center uk-section uk-light" data-src="images/about/Group45451-3.png" uk-img>
+    <div class="uk-container">
+        <h2 class="uk-text-center baiviet__title" style="--icon-title-bottom: url(images/Frame_427322377.png)"><div>Triết lý giáo dục <span style="color: #E92629;">Casalink</span></div></h2>
+        <div class="uk-flex-right@m uk-margin-medium" uk-grid>
+            <div class="uk-width-1-2@m">
+                <h3 class="uk-text-center about__trietly__title">Triết lý 3 gốc rễ</h3>
+                <div class="uk-margin-medium">
+                    <div class="about__trietly__coverContainer uk-margin" style="--urlLine: url(images/about/Group45450-3.png)">
+                        <div class=" uk-cover-container">
+                            <img src="images/about/Group-11.png" alt="" uk-cover="">
+                            <canvas class="about__trietly__canvas" width="645" height="112"></canvas>
+                            <div class="about__trietly__box uk-position-cover uk-padding-small">
+                                Niềm tin mỗi đứa trẻ đều là một thiên tài, nhiệm vụ của gia đình, nhà trường và xã hội là tìm ra và phát triển tài năng của các con. Bổ sung thêm các câu chuyện trong thực tế. Ví dụ thiên tài Albert Einstein.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__trietly__coverContainer uk-margin" style="--urlLine: url(images/about/Group45451-4.png)">
+                        <div class=" uk-cover-container">
+                            <img src="images/about/Group-11.png" alt="" uk-cover="">
+                            <canvas class="about__trietly__canvas" width="645" height="112"></canvas>
+                            <div class="about__trietly__box uk-position-cover uk-padding-small">
+                                Người giáo viên vĩ đại không chỉ dạy kiến thức mà còn truyền được cảm hứng cho học sinh tin vào bản thân mình để nỗ lực đạt đến ước mơ.Bổ sung thêm các câu chuyện về người thầy vĩ đại.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__trietly__coverContainer uk-margin" style="--urlLine: url(images/about/Group45452-2.png)">
+                        <div class=" uk-cover-container">
+                            <img src="images/about/Group-11.png" alt="" uk-cover="">
+                            <canvas class="about__trietly__canvas" width="645" height="112"></canvas>
+                            <div class="about__trietly__box uk-position-cover uk-padding-small">
+                                Tình yêu thương sẽ nuôi dưỡng thiên tài. Tại CASALINK các em sẽ được tiếp cận nền giáo dục hạnh phúc giúp các em phát triển năng lực của bản thân, tự tin chinh phục ước mơ.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Triết lý giáo dục Casalink-->
 <?php require "template-parts/layouts/footer.php"; ?>

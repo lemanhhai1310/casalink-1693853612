@@ -5,6 +5,70 @@
       min-height: 200px;
     }
   }
+  &__trietly{
+    min-height: 704px;
+    padding-top: 60px;
+    @include media-breakpoint-up('m'){
+      padding-top: 70px;
+    }
+    &__title{
+      color: #FEE92A !important;
+      font-family: $font-PaytoneOne;
+      @include font-size(28px);
+      line-height: 1.28;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px #4F240C;
+    }
+    &__coverContainer{
+      position: relative;
+      &:before{
+        content: "";
+        background: var(--urlLine) no-repeat center;
+        background-size: contain;
+        height: 26px;
+        display: flex;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        @include media-breakpoint-up('m'){
+          opacity: 1;
+        }
+      }
+      &:nth-child(1){
+        &:before{
+          width: 288px;
+        }
+      }
+      &:nth-child(2){
+        &:before{
+          width: 299px;
+        }
+      }
+      &:nth-child(3){
+        &:before{
+          width: 357px;
+        }
+      }
+    }
+    &__canvas{
+      height: 136px;
+      @include media-breakpoint-up('m'){
+        height: 112px;
+      }
+    }
+    &__box{
+      color: #9B2A06;
+      font-family: $font-HelveBold;
+      //line-height: 1.75;
+      @include font-size(16px);
+      @include media-breakpoint-up('m'){
+        padding-left: 30px;
+        //padding-right: 30px;
+      }
+    }
+  }
   &__phuongphapdaotao{
     &__gridTop{
       @include media-breakpoint-up('m'){
