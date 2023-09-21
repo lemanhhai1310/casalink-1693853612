@@ -1,0 +1,111 @@
+.lichkhaigiang{
+  &__banner{
+    @include media-breakpoint-up('m'){
+      min-height: 400px;
+    }
+    background-color: var(--Blue, #273E8A);
+    &__title{
+      @extend .tintuc__banner__title;
+    }
+    &__txt{
+      .txt{
+        transform: rotate(-2.576deg);
+        flex-shrink: 0;
+        //@include font-size(32px);
+        font-family: $font-HelveBold;
+        color: #fff;
+        text-transform: uppercase;
+        @include fluidx(32px,18px,font-size);
+      }
+      canvas{
+        width: 240px;
+        @include media-breakpoint-up('m'){
+          width: 390px;
+        }
+      }
+    }
+  }
+  &__tab{
+    margin-left: 0;
+    @include media-breakpoint-up('m'){
+      margin-bottom: 60px;
+    }
+    >li{
+      padding-left: 0;
+      >a{
+        background: #F5F0DF;
+        border: none;
+        color: #E92629;
+        font-family: $font-HelveBold;
+        min-height: 40px;
+        @include media-breakpoint-up('m'){
+          min-height: 60px;
+          @include font-size(20px);
+        }
+      }
+      &.uk-active{
+        >a{
+          color: #fff;
+          background: linear-gradient(180deg, #E92629 0%, #C0181B 145.95%);
+          background: #E92629;
+          position: relative;
+          &:after{
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+
+            border-top: 14px solid #E92629;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+  &__table{
+    background-color: #fff;
+    &__btn{
+      font-size: 14px;
+      @include media-breakpoint-up('m'){
+        font-size: 16px;
+      }
+      border-radius: 8px;
+      background: var(--Red, #E92629);
+      text-transform: inherit;
+      padding: 0 16px;
+      font-family: $font-HelveticalNeueMedium;
+    }
+    tr{
+      th{
+        text-align: center;
+        background: var(--Blue-P, #199BD3);
+        color: #fff;
+        @include media-breakpoint-up('m'){
+          @include font-size(20px);
+          //min-height: 67px;
+          //height: 67px;
+          //box-sizing: border-box;
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+        font-family: $font-HelveticalNeueMedium;
+      }
+      td,th{
+        border: 1px solid #DCDCDC;
+        white-space: nowrap;
+      }
+      td{
+        font-size: 14px;
+        @include media-breakpoint-up('m'){
+          font-size: 16px;
+        }
+        color: #262626;
+        font-family: $font-HelveticalNeue;
+      }
+    }
+  }
+}

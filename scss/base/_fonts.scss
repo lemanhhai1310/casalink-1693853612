@@ -43,3 +43,23 @@
   font-weight:normal;
   font-style:normal;
 }
+@font-face{
+  font-family:'Helvetica Neue Medium';
+  font-display: swap;
+  src:local('Helvetica Neue Medium'),
+  url('fonts/HelveticalNeue/helvetica-neue-medium.ttf') format('woff'),
+  url('fonts/HelveticalNeue/HelveticaNeue-Medium.otf') format('opentype'),
+  url('fonts/HelveticalNeue/helvetica-neue-medium.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Helvetica Neue';
+  font-display: swap;
+  src:local('Helvetica Neue'),
+  url('fonts/HelveticalNeue/helvetica-neue-regular.ttf') format('woff'),
+  url('fonts/HelveticalNeue/HelveticaNeue.otf') format('opentype'),
+  url('fonts/HelveticalNeue/helvetica-neue-regular.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
